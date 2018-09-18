@@ -1,4 +1,6 @@
 class WorkoutsController < ApplicationController
+    before_action :set_workout, only: [:show, :edit, :update, :destroy]
+    before_action :authorize, except: [:index, :show]
 
     def index
         @workouts = Workout.all
@@ -42,6 +44,11 @@ class WorkoutsController < ApplicationController
     end
 
     private
+
+    def set_workout
+        @workout = Workout.find(params[:id])
+        end
+
     def workout_params
         params.require(:workout).permit(:name, :location, :description, :reps, :duration, :image)
     end
