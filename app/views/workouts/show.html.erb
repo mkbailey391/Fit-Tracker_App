@@ -6,4 +6,4 @@
 <h6><%= image_tag(@workout.image, height: "300px", width: "300px") %></h6>
 <h6><span><%= link_to "Edit", edit_workout_path(@workout) %> </span></h5>
 <h5><span><%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %></span></h5>
-
+<span><%= link_to "Thoughts?", new_workout_comment_path(@workout) %></span>

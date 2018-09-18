@@ -5,7 +5,7 @@
     <div>
         <% @workouts.each do |w| %>
         <h3><%= link_to w.name, workout_path(w) %></h3>
-        <%= image_tag(w.image, alt: w.name, width: "300px") %>
+        <%= image_tag(w.image, alt: w.name, width: "200px", height: "250px") %>
         <% end %>
     </div>
 </div>

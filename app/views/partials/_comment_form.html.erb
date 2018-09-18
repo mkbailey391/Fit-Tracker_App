@@ -1,0 +1,16 @@
+<%= form_for([@workout, @comment]) do |f| %>
+    <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_field :body, {:class => "form-control"} %>
+    </div>
+    <div class ="form_group">
+    <%= f.label :author %>
+    <%= f.text_field :author, {:class => "form-control"} %>
+    </div>
+    <div class="form_group">
+    <%= f.label :recommend %>
+    <%= f.check_box :recommend %>
+    </div>
+    <%= f.submit :Submit, class: "btn btn-primary" %>
+
+<% end %>
