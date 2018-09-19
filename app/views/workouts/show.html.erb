@@ -1,10 +1,17 @@
-<h2><%= @workout.name %></h2>
-<h5>City: <%= @workout.location %></h5>
-<h5>Workout: <%= @workout.description %></h5>
-<h5>Reps: <%= @workout.reps %></h5>
-<h5>Duration: <%= @workout.duration %></h5>
-<h5><%= image_tag(@workout.image, height: "300px", width: "300px") %></h5>
-
-<h6><%= link_to "Edit", edit_workout_path(@workout) %></h6>
-<h6><%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %></h6>
-<h6><%= link_to "Thoughts?", new_workout_comment_path(@workout) %></h6>
+<section>
+    <div class="information">
+        <h2><%= @workout.name %></h2>
+        <h4>City : <%= @workout.location %></h4>
+        <h4>Workout : <%= @workout.description %></h4>
+        <h4>Reps : <%= @workout.reps %></h4>
+        <h4>Duration : <%= @workout.duration %></h4>
+        <div class="links">
+            <%= link_to "Edit", edit_workout_path(@workout) %>
+            <%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %>
+            <%= link_to "Thoughts?", new_workout_comment_path(@workout) %>
+        </div>
+    </div>
+    <div class="picture">
+        <%= image_tag(@workout.image, height: "300px", width: "300px") %>
+    </div>
+</section>
