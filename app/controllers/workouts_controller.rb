@@ -18,14 +18,7 @@ class WorkoutsController < ApplicationController
     end
 
     def create
-        # @user = User.find(params[:user_id])    
-        # @workout = @user.workouts.new(workout_params)
-
-        # if @workout.save
-        #     redirect_to user_path(@user)
-        # else
-        #     redirect_to 'new'
-        # @workout = Workout.new(workout_params)
+        @workout = current_user.workouts.new(workout_params)
 
         if @workout.save 
             redirect_to workout_path(@workout)
@@ -57,7 +50,7 @@ class WorkoutsController < ApplicationController
 
     def set_workout
         @workout = Workout.find(params[:id])
-        end
+    end
 
     def workout_params
         params.require(:workout).permit(:name, :location, :description, :reps, :duration, :image)
