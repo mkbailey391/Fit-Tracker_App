@@ -19,6 +19,76 @@
      font-size: 12px;
  }
 
-.login a {
-    float: right;
+ ul {
+     list-style-type: none;
+ }
+
+ ul li {
+     float: left;
+ }
+
+
+.form-control {
+    width: 900px;
+}
+
+body{
+    background: lightcoral;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar {
+    
+    color: black;
+}
+.container{
+    text-align: center;
+}
+
+.credentials{
+    margin-left: 620px;
+}
+
+.location{
+    margin-left: -500px;
+}
+.name{
+    margin-left: -540px;
+}
+
+.description{
+    margin-left: -435px;
+}
+
+.reps{
+    margin-left: -350px;
+}
+
+.duration{
+    margin-left: -400px;
+}
+
+.image{
+    margin-left: -500px;
+}
+
+.submit{
+    margin-left: -500px;
+}
+section{
+    display: flex;
+}
+
+section div{
+    flex: 1;
+}
+.links{
+    display: flex;
+    justify-content: center;
+   
+    a{
+        padding: 20px;
+        color: white;
+    }
 }
