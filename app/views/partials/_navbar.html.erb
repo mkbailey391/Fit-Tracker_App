@@ -13,6 +13,8 @@
       </li>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
+      </div>
+      <div class="credentials">
       <div class="login">
         <% if current_user %>
         Welcome, <%= current_user.name %>
@@ -24,6 +26,7 @@
         <%= link_to 'Sign Up', new_user_path %>
         <% end %>
         </ul>
+        </div>
   </div>
 </p>
       </nav>

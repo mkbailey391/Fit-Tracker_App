@@ -1,9 +1,10 @@
-<h3><%= @workout.name %></h3>
+<h2><%= @workout.name %></h2>
 <h5>City: <%= @workout.location %></h5>
 <h5>Workout: <%= @workout.description %></h5>
-<h6>Reps: <%= @workout.reps %></h6>
-<h6>Duration: <%= @workout.duration %></h6>
-<h6><%= image_tag(@workout.image, height: "300px", width: "300px") %></h6>
-<span><h5><%= link_to "Edit", edit_workout_path(@workout) %> </h5></span>
-<span><h5><%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %></h5></span>
-<span><h5><%= link_to "Thoughts?", new_workout_comment_path(@workout) %></h5></span>
+<h5>Reps: <%= @workout.reps %></h5>
+<h5>Duration: <%= @workout.duration %></h5>
+<h5><%= image_tag(@workout.image, height: "300px", width: "300px") %></h5>
+
+<h6><%= link_to "Edit", edit_workout_path(@workout) %></h6>
+<h6><%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %></h6>
+<h6><%= link_to "Thoughts?", new_workout_comment_path(@workout) %></h6>

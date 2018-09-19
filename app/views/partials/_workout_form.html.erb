@@ -1,28 +1,28 @@
 <%= form_for @workout do |f| %>
     <div class="form-group">
-    <%= f.label :name %>
     <%= f.text_field :name, {:class => "form-control"} %>
+    <div class= "name"<%= f.label :name %></div>
     </div>
     <div class ="form_group">
-    <%= f.label :location %>
     <%= f.text_field :location, {:class => "form-control"} %>
+    <div class= "location"><%= f.label :location %></div>
     </div>
     <div class="form_group">
-    <%= f.label :description %>
     <%= f.text_field :description, {:class => "form-control"} %>
+    <div class= "description"<%= f.label :What_did_you_do? %></div>
     </div>
     <div class="form_group">
-    <%= f.label :reps %>
     <%= f.number_field :reps, {:class => "form-control"} %>
+    <div class= "reps"<%= f.label :How_many_reps_did_you_do? %></div>
     </div>
     <div class="form_group">
-    <%= f.label :duration %>
     <%= f.text_field :duration, {:class => "form-control"} %>
+    <div class= "duration"<%= f.label :How_long_did_it_take? %></div>
     </div>
     <div class="form_group">
-    <%= f.label :image %>
     <%= f.text_field :image, {:class => "form-control"} %>
+    <div class= "image"<%= f.label :post_a_pic %></div>
     </div>
-    <%= f.submit :Submit, class: "btn btn-primary" %>
+    <div class="submit"><%= f.submit :Submit, class: "btn btn-primary" %></div>
 
 <% end %>

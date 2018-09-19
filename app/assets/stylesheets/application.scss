@@ -33,25 +33,46 @@
 }
 
 body{
-    background: rgb(35, 131, 240);
+    background: lightcoral;
     color: white;
     font-family: 'Cinzel', serif;
 }
 
-.navbar-nav {
-    margin-left: 40px;
-}
-
-
 .navbar {
-    background: lightblue;
-    color: navy;
+    
+    color: black;
 }
-
 .container{
     text-align: center;
 }
 
-h5{
-    color: white;
+.credentials{
+    margin-left: 620px;
+}
+
+.location{
+    margin-left: -500px;
+}
+.name{
+    margin-left: -540px;
+}
+
+.description{
+    margin-left: -435px;
+}
+
+.reps{
+    margin-left: -350px;
+}
+
+.duration{
+    margin-left: -400px;
+}
+
+.image{
+    margin-left: -500px;
+}
+
+.submit{
+    margin-left: -500px;
 }
