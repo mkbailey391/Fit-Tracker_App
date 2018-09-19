@@ -1,11 +1,10 @@
-<h1>Shared Workouts </h1>
+<h1>Find Your Fitspiration</h1>
 
 
 <div>
-    <div>
+    <ul>
         <% @workouts.each do |w| %>
-        <h3><%= link_to w.name, workout_path(w) %></h3>
-        <%= image_tag(w.image, alt: w.name, width: "200px", height: "250px") %>
+        <li><%= link_to image_tag(w.image, alt: w.name, width: "250px", height: "200px", :style => "padding: 5px"), workout_path(w) %></li>
         <% end %>
-    </div>
+    </ul>
 </div>

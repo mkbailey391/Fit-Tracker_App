@@ -19,6 +19,39 @@
      font-size: 12px;
  }
 
-.login a {
-    float: right;
+ ul {
+     list-style-type: none;
+ }
+
+ ul li {
+     float: left;
+ }
+
+
+.form-control {
+    width: 900px;
+}
+
+body{
+    background: rgb(35, 131, 240);
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-nav {
+    margin-left: 40px;
+}
+
+
+.navbar {
+    background: lightblue;
+    color: navy;
+}
+
+.container{
+    text-align: center;
+}
+
+h5{
+    color: white;
 }
