@@ -1,4 +1,5 @@
 <%= form_for @workout do |f| %>
+    <div class = "information">
     <div class="form-group">
     <%= f.text_field :name, {:class => "form-control"} %>
     <div class= "name"<%= f.label :name %></div>
@@ -22,6 +23,7 @@
     <div class="form_group">
     <%= f.text_field :image, {:class => "form-control"} %>
     <div class= "image"<%= f.label :post_a_pic %></div>
+    </div>
     </div>
     <div class="submit"><%= f.submit :Submit, class: "btn btn-primary" %></div>
 
