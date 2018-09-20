@@ -71,6 +71,7 @@ body{
 
 .image{
     margin-left: -500px;
+    border-style: dotted 8px;
 }
 
 .submit{
@@ -78,10 +79,14 @@ body{
 }
 section{
     display: flex;
+    border-style: dotted;
+    padding: 90px;
+    border-width: 5px;
 }
 
 section div{
     flex: 1;
+    
 }
 .links{
     display: flex;
@@ -92,3 +97,5 @@ section div{
         color: white;
     }
 }
+
+
