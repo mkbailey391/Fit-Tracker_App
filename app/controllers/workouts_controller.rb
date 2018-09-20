@@ -1,6 +1,6 @@
 class WorkoutsController < ApplicationController
     before_action :set_workout, only: [:show, :edit, :update, :destroy]
-    before_action :authorize, except: [:index, :show]
+    before_action :authorize, except: [:index]
 
     def index
         @workouts = Workout.all
