@@ -33,7 +33,8 @@ class WorkoutsController < ApplicationController
 
     def update
         @workout = Workout.find params[:id]
-        if @workout.update(workout_params)
+        puts @workout.inspect 
+        if @workout.update!(workout_params)
             redirect_to workout_path(@workout)
         else 
             render 'edit'

@@ -5,11 +5,14 @@
         <h4>Workout : <%= @workout.description %></h4>
         <h4>Reps : <%= @workout.reps %></h4>
         <h4>Duration : <%= @workout.duration %></h4>
+
+        <%if current_user%>
         <div class="links">
             <%= link_to "Edit", edit_workout_path(@workout) %>
             <%= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"} %>
             <%= link_to "Thoughts?", new_workout_comment_path(@workout) %>
         </div>
+        <%end%>
     </div>
     <div class="picture">
         <%= image_tag(@workout.image, height: "300px", width: "300px") %>

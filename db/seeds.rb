@@ -14,4 +14,5 @@ workouts =[
     {name: "David Suarez", location: "Sherman Oakes", description: "I love long walks on the beach!", reps: 0, duration: "60 min", image: "https://s3.envato.com/files/22518658/man%20walks%20on%20the%20beach%20at%20sunset.jpg"}
 ]
 Workout.delete_all
-Workout.create(workouts)
+
+User.first.workouts.create(workouts)
